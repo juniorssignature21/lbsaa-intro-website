@@ -113,11 +113,11 @@ export default function ModernTemplate({ m }: { m: BannerModel }) {
       </AutoFit>
 
       {/* Bottom brand strip within navy block */}
-      <div style={{ position: 'absolute', left: 90, bottom: 44, width: 760, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <BrandPillars color="#FFFFFF" size={17} />
-        <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: gold, whiteSpace: 'nowrap' }}>LBS Alumni Association</span>
+      <div style={{ position: 'absolute', left: 90, bottom: 28, width: 780 }}>
+        <BrandPillars color="#FFFFFF" size={16} />
+        <div style={{ marginTop: 10, fontSize: 13.5, fontWeight: 500, lineHeight: 1.4, color: gold }}>{BRAND.initiative}</div>
       </div>
-      <div style={{ position: 'absolute', left: 90, bottom: 92, width: 760, height: 1, background: 'rgba(255,255,255,0.18)' }} />
+      <div style={{ position: 'absolute', left: 90, bottom: 96, width: 760, height: 1, background: 'rgba(255,255,255,0.18)' }} />
     </div>
   );
 }

@@ -93,7 +93,7 @@ export default function ExecutiveTemplate({ m }: { m: BannerModel }) {
       <div style={{ position: 'absolute', left: 0, bottom: 0, width: 1600, height: 96, background: navy, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 96px', boxSizing: 'border-box' }}>
         <div style={{ position: 'absolute', left: 0, top: 0, width: 1600, height: 5, background: gold }} />
         <BrandPillars color="#FFFFFF" size={20} />
-        <span style={{ fontSize: 15, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.78)' }}>{BRAND.name}</span>
+        <span style={{ fontSize: 16, fontWeight: 500, lineHeight: 1.4, textAlign: 'right', maxWidth: 900, color: 'rgba(255,255,255,0.82)' }}>{BRAND.initiative}</span>
       </div>
     </div>
   );

@@ -32,6 +32,8 @@ export const BRAND = {
   short: 'LBSAA',
   tag: 'Introduce Yourself',
   pillars: ['Connect', 'Support', 'Grow'] as const,
+  /** Attribution line shown at the foot of every banner. */
+  initiative: 'This is an initiative of the Lagos Business School Alumni Association South-South/South-East Region, Nigeria.',
   colors: {
     navy: '#0B2348',
     navyDark: '#071A36',
