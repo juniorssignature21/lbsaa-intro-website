@@ -61,7 +61,7 @@ export default function ModernTemplate({ m }: { m: BannerModel }) {
 
       {/* Left content */}
       <AutoFit width={textWidth} height={720} style={{ left: 90, top: 50 }}>
-        <Logo height={96} tone="white" />
+        <Logo height={78} tone="white" />
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 30 }}>
           <span style={{ width: 54, height: 4, background: gold }} />
@@ -115,7 +115,7 @@ export default function ModernTemplate({ m }: { m: BannerModel }) {
       {/* Bottom brand strip within navy block */}
       <div style={{ position: 'absolute', left: 90, bottom: 44, width: 760, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <BrandPillars color="#FFFFFF" size={17} />
-        <span style={{ fontSize: 19, fontStyle: 'italic', fontWeight: 500, color: gold, whiteSpace: 'nowrap' }}>{BRAND.motto}</span>
+        <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: gold, whiteSpace: 'nowrap' }}>LBS Alumni Association</span>
       </div>
       <div style={{ position: 'absolute', left: 90, bottom: 92, width: 760, height: 1, background: 'rgba(255,255,255,0.18)' }} />
     </div>

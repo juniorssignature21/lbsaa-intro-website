@@ -95,7 +95,7 @@ export default function Home({ onCreate }: { onCreate: () => void }) {
           <h2 id="cta-title" className="mt-4 max-w-3xl font-display text-3xl leading-tight font-extrabold sm:text-5xl">
             Enter your information. Upload your photo. <span className="text-gold">We create the design for you.</span>
           </h2>
-          <p className="mt-5 max-w-xl text-white/75">{BRAND.motto} — let the network know who you are and where you are now.</p>
+          <p className="mt-5 max-w-xl text-white/75">Let the alumni network know who you are, what you do and where you are now.</p>
           <button type="button" onClick={onCreate} className="btn-gold mt-8 px-7 py-3.5 text-base">
             Create My Introduction <ArrowRight className="size-4" aria-hidden="true" />
           </button>

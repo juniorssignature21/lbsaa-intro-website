@@ -47,7 +47,7 @@ export default function MinimalTemplate({ m }: { m: BannerModel }) {
 
       {/* Left column */}
       <AutoFit width={textWidth} height={680} style={{ left: 116, top: 84 }}>
-        <Logo height={92} />
+        <Logo height={76} />
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 44 }}>
           <span style={{ width: 56, height: 2, background: gold }} />
@@ -100,7 +100,7 @@ export default function MinimalTemplate({ m }: { m: BannerModel }) {
       {/* Footer line */}
       <div style={{ position: 'absolute', left: 116, right: 116, bottom: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <BrandPillars color={navy} size={15} tracking="0.3em" />
-        <div style={{ fontSize: 19, fontStyle: 'italic', color: GOLD_TEXT, fontWeight: 500 }}>{BRAND.motto}</div>
+        <div style={{ fontSize: 14, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: GOLD_TEXT }}>LBS Alumni Association</div>
       </div>
     </div>
   );

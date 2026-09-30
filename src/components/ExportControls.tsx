@@ -5,7 +5,7 @@ import { downloadBlob } from '../utils/exportBanner';
 import { copyText, fileSlug, profileToText } from '../utils/profileText';
 import { useToast } from './Toast';
 
-export const SHARE_MESSAGE = 'I’ve created my LBS Alumni Personal Introduction. Connect | Support | Grow — Once a LBS, Always a LBS.';
+export const SHARE_MESSAGE = 'I’ve created my LBS Alumni Personal Introduction. Connect | Support | Grow.';
 
 interface Props {
   state: BannerState;

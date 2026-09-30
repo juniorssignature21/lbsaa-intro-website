@@ -2,7 +2,7 @@
 
 A browser-only React app for members of the **Lagos Business School Alumni Association (LBSAA)**. Members enter their details and upload a portrait, and the app designs a 1600 × 900 introduction banner that they can download as a PNG or share.
 
-**Connect | Support | Grow**: *Once a LBS, Always a LBS*
+**Connect | Support | Grow**
 
 ## Features
 
@@ -21,12 +21,12 @@ A browser-only React app for members of the **Lagos Business School Alumni Assoc
 
 ## LBSAA logo
 
-The official LBSAA emblem, with the wordmark cropped off, is stored as two transparent PNGs:
+The Lagos Business School logo and the LBSAA logo are shown side by side. Each is stored as a transparent PNG in its own colour (for light backgrounds) and in white (for navy backgrounds):
 
-- `public/brand/lbsaa-emblem-navy.png` for light backgrounds
-- `public/brand/lbsaa-emblem-white.png` for navy backgrounds
+- `public/brand/lbs-logo-color.png`, `public/brand/lbs-logo-white.png`
+- `public/brand/lbsaa-logo-color.png`, `public/brand/lbsaa-logo-white.png`
 
-Every screen and the exported PNG load them through `LOGO_SRC` in `src/config/brand.ts`.
+Every screen and the exported PNG load them through `LOGOS` in `src/config/brand.ts`, and `src/components/Logo.tsx` lays out the pair.
 
 ## Getting started
 

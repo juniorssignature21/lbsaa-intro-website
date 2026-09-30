@@ -51,7 +51,7 @@ export default function ExecutiveTemplate({ m }: { m: BannerModel }) {
 
       {/* Left column */}
       <AutoFit width={textWidth} height={718} style={{ left: 96, top: 56 }}>
-        <Logo height={100} />
+        <Logo height={82} />
 
         <div className="display" style={{ marginTop: 30, fontSize: 80, fontWeight: 800, lineHeight: 0.98, letterSpacing: '-0.015em', textTransform: 'uppercase' }}>
           <div style={{ color: navy }}>Introduce</div>
@@ -93,11 +93,7 @@ export default function ExecutiveTemplate({ m }: { m: BannerModel }) {
       <div style={{ position: 'absolute', left: 0, bottom: 0, width: 1600, height: 96, background: navy, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 96px', boxSizing: 'border-box' }}>
         <div style={{ position: 'absolute', left: 0, top: 0, width: 1600, height: 5, background: gold }} />
         <BrandPillars color="#FFFFFF" size={20} />
-        <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-          <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.65)' }}>{BRAND.name}</span>
-          <span style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.3)' }} />
-          <span style={{ fontSize: 23, fontStyle: 'italic', fontWeight: 500, color: gold }}>{BRAND.motto}</span>
-        </div>
+        <span style={{ fontSize: 15, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.78)' }}>{BRAND.name}</span>
       </div>
     </div>
   );

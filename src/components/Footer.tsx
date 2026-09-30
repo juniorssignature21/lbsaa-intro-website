@@ -8,14 +8,7 @@ export default function Footer({ navigate }: { navigate: (to: Route) => void }) 
       <div className="h-1 bg-gold" />
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
         <div>
-          <div className="flex items-center gap-4">
-            <Logo height={60} tone="white" decorative />
-            <p className="font-display text-sm leading-snug font-bold tracking-wide uppercase">
-              Lagos Business School
-              <br />
-              Alumni Association
-            </p>
-          </div>
+          <Logo height={52} tone="white" heightClass="[--logo-h:40px] sm:[--logo-h:52px]" />
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/70">
             A simple tool for members of the {BRAND.name} to introduce themselves to the alumni community — professionally, in seconds.
           </p>
@@ -24,7 +17,6 @@ export default function Footer({ navigate }: { navigate: (to: Route) => void }) 
           <p className="font-display text-sm font-bold tracking-[0.25em] uppercase">
             Connect <span className="text-gold">|</span> Support <span className="text-gold">|</span> Grow
           </p>
-          <p className="mt-2 text-lg text-gold italic">{BRAND.motto}</p>
           <nav aria-label="Footer" className="mt-5 flex gap-5 text-sm text-white/70 md:justify-end">
             <a href="#/" onClick={(e) => { e.preventDefault(); navigate('home'); }} className="hover:text-white">
               Home

@@ -35,12 +35,8 @@ export default function Header({ route, navigate }: HeaderProps) {
         Skip to content
       </a>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-6 lg:px-8">
-        <a href="#/" onClick={go('home')} className="flex flex-none items-center gap-3 rounded" aria-label="LBSAA Personal Introduction — Home">
-          <Logo height={48} decorative className="h-10 w-auto sm:h-12" />
-          <span className="border-l border-line pl-3 leading-tight">
-            <span className="block font-display text-sm font-extrabold tracking-wide text-navy">LBSAA</span>
-            <span className="block text-[11px] font-medium text-slate">Personal Introduction</span>
-          </span>
+        <a href="#/" onClick={go('home')} className="flex flex-none items-center gap-3 rounded" aria-label="LBS Alumni Personal Introduction — Home">
+          <Logo height={40} decorative heightClass="[--logo-h:32px] sm:[--logo-h:42px]" />
         </a>
 
         <nav aria-label="Main" className="hidden items-center gap-1 md:flex">
