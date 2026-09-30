@@ -37,7 +37,23 @@ npm run build      # type-check + production build to dist/
 npm run preview    # serve the production build
 ```
 
-It uses hash routing (`#/`, `#/create`), so the `dist/` folder works on any static host (Netlify, Vercel, GitHub Pages, S3) without extra setup.
+It uses hash routing (`#/`, `#/create`), so no server rewrites are needed.
+
+## Deploying to Vercel
+
+`vercel.json` is already set up. It builds with `npm run build`, serves `dist/`, caches hashed assets for a year, and sends security headers, including a strict Content-Security-Policy that the app has been tested against.
+
+1. Push the repo to GitHub.
+2. In Vercel, choose **Add New → Project**, import the repository and click **Deploy**. Vercel reads `vercel.json`, so you don't need to change any settings.
+3. **Once you add a custom domain,** set an environment variable `SITE_URL` (for example `https://intro.lbsaa.org`) under **Project → Settings → Environment Variables**, then redeploy.
+
+### Link previews, robots.txt and sitemap
+
+- `index.html` has Open Graph and X/Twitter tags, so shared links show a 1200 × 630 banner card (`public/og-image.jpg`). The preview works on WhatsApp, LinkedIn, Facebook, X, Slack and iMessage.
+- Social platforms need an absolute image URL. At build time the `%SITE_URL%` placeholders are filled from `SITE_URL`, or from Vercel's own production URL if `SITE_URL` isn't set, so previews work on the first deploy.
+- `robots.txt` (allows all crawlers) and `sitemap.xml` are generated at build time with the same URL.
+- `site.webmanifest` plus the favicon and app icons let people add the site to a phone's home screen.
+- After deploying, you can check the preview at https://www.opengraph.xyz or LinkedIn's Post Inspector. Platforms cache previews, so re-scrape there after changing the image.
 
 ## Tech
 
