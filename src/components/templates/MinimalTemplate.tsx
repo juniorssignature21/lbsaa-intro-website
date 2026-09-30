@@ -100,7 +100,7 @@ export default function MinimalTemplate({ m }: { m: BannerModel }) {
       {/* Footer line */}
       <div style={{ position: 'absolute', left: 116, right: 116, bottom: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <BrandPillars color={navy} size={15} tracking="0.3em" />
-        <div style={{ fontSize: 15, fontWeight: 500, lineHeight: 1.4, textAlign: 'right', maxWidth: 860, color: GOLD_TEXT }}>{BRAND.initiative}</div>
+        <div style={{ fontSize: 17, fontWeight: 500, letterSpacing: '0.03em', color: GOLD_TEXT }}>{BRAND.initiative}</div>
       </div>
     </div>
   );
