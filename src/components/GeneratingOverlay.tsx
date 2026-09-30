@@ -19,7 +19,7 @@ export default function GeneratingOverlay({ step }: { step: number }) {
     <div className="fixed inset-0 z-[60] flex animate-fade-in items-center justify-center bg-navy-dark/90 px-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Generating your introduction">
       <div ref={ref} tabIndex={-1} className="w-full max-w-md rounded-md bg-white p-8 text-center shadow-2xl outline-none sm:p-10">
         <div className="flex justify-center">
-          <Logo height={52} decorative />
+          <Logo height={64} decorative />
         </div>
         <div className="relative mx-auto mt-8 size-24">
           <svg viewBox="0 0 100 100" className="size-24 -rotate-90" aria-hidden="true">

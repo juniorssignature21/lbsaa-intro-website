@@ -51,9 +51,9 @@ export default function ExecutiveTemplate({ m }: { m: BannerModel }) {
 
       {/* Left column */}
       <AutoFit width={textWidth} height={718} style={{ left: 96, top: 56 }}>
-        <Logo height={78} />
+        <Logo height={100} />
 
-        <div className="display" style={{ marginTop: 40, fontSize: 80, fontWeight: 800, lineHeight: 0.98, letterSpacing: '-0.015em', textTransform: 'uppercase' }}>
+        <div className="display" style={{ marginTop: 30, fontSize: 80, fontWeight: 800, lineHeight: 0.98, letterSpacing: '-0.015em', textTransform: 'uppercase' }}>
           <div style={{ color: navy }}>Introduce</div>
           <div style={{ color: gold }}>Yourself</div>
         </div>

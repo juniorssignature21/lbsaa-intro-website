@@ -1,13 +1,14 @@
 /**
  * Single source of truth for LBSAA branding.
  *
- * To use the official logo, drop the file into `public/brand/` and point
- * LOGO_FILE at it (e.g. 'brand/lbsaa-logo.png'). The header, landing page,
- * every banner template and the exported PNG all read from here.
+ * The official LBSAA emblem (wordmark cropped off), as transparent PNGs:
+ * navy for light backgrounds, white for navy backgrounds. The header,
+ * landing page, every banner template and the exported PNG read from here.
  */
-const LOGO_FILE = 'brand/lbsaa-logo.svg';
-
-export const LOGO_SRC = `${import.meta.env.BASE_URL}${LOGO_FILE}`;
+export const LOGO_SRC = {
+  navy: `${import.meta.env.BASE_URL}brand/lbsaa-emblem-navy.png`,
+  white: `${import.meta.env.BASE_URL}brand/lbsaa-emblem-white.png`,
+} as const;
 export const LOGO_ALT = 'Lagos Business School Alumni Association (LBSAA) logo';
 
 export const BRAND = {

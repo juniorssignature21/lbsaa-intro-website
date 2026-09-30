@@ -15,7 +15,7 @@ export default function Hero({ onCreate, onExample }: HeroProps) {
       <div className="relative mx-auto max-w-7xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16 lg:px-8 lg:pt-20 lg:pb-24">
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex animate-fade-up justify-center">
-            <Logo height={72} className="h-14 w-auto sm:h-[72px]" />
+            <Logo height={96} className="h-20 w-auto sm:h-24" />
           </div>
           <p className="eyebrow mt-8 animate-fade-up">Lagos Business School Alumni Association</p>
           <h1 id="hero-title" className="mt-3 animate-fade-up font-display text-5xl font-extrabold tracking-tight text-navy uppercase sm:text-6xl lg:text-7xl">

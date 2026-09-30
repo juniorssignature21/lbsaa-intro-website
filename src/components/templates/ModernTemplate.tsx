@@ -61,11 +61,9 @@ export default function ModernTemplate({ m }: { m: BannerModel }) {
 
       {/* Left content */}
       <AutoFit width={textWidth} height={720} style={{ left: 90, top: 50 }}>
-        <div>
-          <Logo height={64} plate />
-        </div>
+        <Logo height={96} tone="white" />
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 42 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 30 }}>
           <span style={{ width: 54, height: 4, background: gold }} />
           <span className="display" style={{ fontSize: 17, fontWeight: 700, letterSpacing: '0.34em', color: gold, textTransform: 'uppercase' }}>
             LBS Alumni

@@ -1,4 +1,4 @@
-export const MAX_UPLOAD_MB = 10;
+export const MAX_UPLOAD_MB = 3;
 const ACCEPTED = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
 export const ACCEPT_ATTR = '.jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp';
 

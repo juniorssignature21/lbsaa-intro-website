@@ -47,9 +47,9 @@ export default function MinimalTemplate({ m }: { m: BannerModel }) {
 
       {/* Left column */}
       <AutoFit width={textWidth} height={680} style={{ left: 116, top: 84 }}>
-        <Logo height={72} />
+        <Logo height={92} />
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 56 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginTop: 44 }}>
           <span style={{ width: 56, height: 2, background: gold }} />
           <span className="display" style={{ fontSize: 20, fontWeight: 700, letterSpacing: '0.38em', color: GOLD_TEXT, textTransform: 'uppercase' }}>
             Introduce Yourself

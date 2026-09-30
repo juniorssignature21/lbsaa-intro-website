@@ -8,7 +8,14 @@ export default function Footer({ navigate }: { navigate: (to: Route) => void }) 
       <div className="h-1 bg-gold" />
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
         <div>
-          <Logo height={52} plate decorative />
+          <div className="flex items-center gap-4">
+            <Logo height={60} tone="white" decorative />
+            <p className="font-display text-sm leading-snug font-bold tracking-wide uppercase">
+              Lagos Business School
+              <br />
+              Alumni Association
+            </p>
+          </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/70">
             A simple tool for members of the {BRAND.name} to introduce themselves to the alumni community — professionally, in seconds.
           </p>
